@@ -91,13 +91,13 @@ EndSection
 
 2. Settings "Sddm"
 
-* KDE/Plasma haven't any problem to set up in `systemsettings` and hold or distribute the settings to all application. Following [GrimBandito](https://bbs.archlinux.org/viewtopic.php?id=220525#:~:text=17%3A45%3A20-,GrimBandito,-Member) [in this thrread](https://bbs.archlinux.org/viewtopic.php?id=220525)...:
+* KDE/Plasma haven't any problem to set up in `systemsettings` and hold or distribute the settings to all application. Following [GrimBandito](https://bbs.archlinux.org/viewtopic.php?id=220525#:~:text=17%3A45%3A20-,GrimBandito,-Member) [in this thread](https://bbs.archlinux.org/viewtopic.php?id=220525)...:
 
 > A better solution would be to ensure Xorg is configured correctly, specifically in the monitor section you need to make sure either your dpi is specified there or that the correct dimensions (mm) of your monitor are specified. Xorg can then correctly calculate your DPI.
 
 * **Ergo:** With step "1." above we solve also the problem having to small fonts & no scaling by booting with "SDDM" 🟰 Problem solved ❗️
 
-* Two thing can be done here, first: "imput handling" = export `~/.config/kcminputrc` to get right 'mouse-acceleration' & 'cursor-size', second: "monitor & display handling" = export `~/.config/kwinoutputconfig.json` to get 'resolution, scaling, frequenz...' like in the [Arch-Wiki](https://wiki.archlinux.org/title/SDDM) explained.
+* Two things can be done here, first: "imput handling" = export `~/.config/kcminputrc` to get right 'mouse-acceleration' & 'cursor-size', second: "monitor & display handling" = export `~/.config/kwinoutputconfig.json` to get 'resolution, scaling, frequenz...' like in the [Arch-Wiki](https://wiki.archlinux.org/title/SDDM) explained.
     * Assure first you have admin-/root-rights with `sudo su` or `su`, than execute following two commands to...
 
 > To enable correct input handling in SDDM (tap-to-click, touchscreen mapping,...), you can copy the appropriate configuration file from your home directory to the one of SDDM:
@@ -137,7 +137,7 @@ Numlock=on
 3. Settings "Gtk"
 
 * If you are not satify whith the "job" of `xorg`, you can modify further your config.
-* Here we use the installed app `xsettingsd` to create the base vonfiguration, use command:
+* Here we use the installed app `xsettingsd`, to create the base of configuration, use command:
 
     `xsettingsd -c` to create/make the standard config-file:
 
