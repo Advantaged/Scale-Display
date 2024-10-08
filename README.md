@@ -62,7 +62,7 @@ paru -S --needed --noconfirm xsettingsd edid-decode-git
 
     * Set your on-board-calculator to scientific and excecute the calculation.
 
-    * **Very important Note:** The hardware-pixels are not homogenouse, that mean... one of the given dimension is wrong, the whole trick is... don't excede the maximum values given by manufaturer. In fact if i take (in mycase) the height 350mm divide by 9 & multiply by 16. i get 622.22 mm that the monitor (following the manufacturer) cannot disply. But, if i take the width as reference (610/16*9)... i get 343,125 mm that the monitor can display. i wasted a lot of time trying to find the rith Dpi for my LCS-Display, don't make the same misstake!
+    * **Very important Note:** The hardware-pixels are not homogenouse, that mean... one of the given dimension is wrong, the whole trick is... don't excede the maximum values given by manufaturer. In fact if i take (in mycase) the height 350mm divide by 9 & multiply by 16. i get 622.22 mm that the monitor (following the manufacturer) cannot disply. But, if i take the width as reference (610/16*9)... i get 343,125 mm that the monitor can display. i wasted a lot of time trying to find the right Dpi for my LCS-Display, don't make the same misstake!
 
     * 16:9 ➡️ 610x343 mm
 > 610/25,4=/3840=1/x --> 160 dpi (approx./ca./rounded up) 
